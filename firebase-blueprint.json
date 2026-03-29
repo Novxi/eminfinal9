@@ -1,0 +1,58 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Application user",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string" },
+        "permissions": { "type": "array" }
+      },
+      "required": ["id", "name", "email", "role"]
+    },
+    "Quote": {
+      "title": "Quote",
+      "description": "Quote request",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "customer": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "status": { "type": "string" },
+        "date": { "type": "string" }
+      },
+      "required": ["id", "customer", "email", "status", "date"]
+    },
+    "Ticket": {
+      "title": "Ticket",
+      "description": "Support ticket",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "customerId": { "type": "string" },
+        "subject": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "customerId", "subject", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "User" },
+      "description": "User documents"
+    },
+    "/quotes/{quoteId}": {
+      "schema": { "$ref": "Quote" },
+      "description": "Quote requests"
+    },
+    "/tickets/{ticketId}": {
+      "schema": { "$ref": "Ticket" },
+      "description": "Support tickets"
+    }
+  }
+}

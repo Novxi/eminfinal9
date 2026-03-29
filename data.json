@@ -1,0 +1,128 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Süper Admin",
+      "email": "106077az@gmail.com",
+      "password": "$2b$10$1lyie4EzWlmSl8Imb4Cwn.41qKeFN9KCjj9TV.UJEiuysg96CKd/y",
+      "role": "admin",
+      "permissions": [
+        "overview",
+        "customers",
+        "quotes",
+        "payments",
+        "support",
+        "gallery",
+        "services",
+        "testimonials",
+        "admins",
+        "settings",
+        "purchased-services",
+        "refunds",
+        "purchasable-services"
+      ]
+    }
+  ],
+  "employees": [],
+  "settings": {
+    "maintenanceMode": false,
+    "siteTitle": "Emin Bilgi İşlem",
+    "slogan": "Teknolojide Güvenilir Çözüm Ortağınız",
+    "description": "Emin Bilgi İşlem, kurumsal ve bireysel teknoloji ihtiyaçlarınız için profesyonel çözümler sunar.",
+    "email": "info@eminbilgiislem.com",
+    "phone": "+90 (555) 000 00 00",
+    "address": "Teknoloji Mah. Bilişim Sok. No:1, İstanbul",
+    "warrantyFee1Year": 1499,
+    "warrantyFee2Year": 2499,
+    "warrantyFee3Year": 3299,
+    "membershipFee": 150,
+    "aiCameraMonthlyFee": 250,
+    "packages": [
+      {
+        "id": "silver",
+        "name": "Silver Paket",
+        "price": 999,
+        "features": [
+          "Temel Teknik Destek",
+          "Yıllık 1 Bakım",
+          "Uzaktan Yardım",
+          "E-posta Desteği"
+        ]
+      },
+      {
+        "id": "gold",
+        "name": "Gold Paket",
+        "price": 1999,
+        "features": [
+          "7/24 Teknik Destek",
+          "Yıllık 2 Bakım",
+          "Öncelikli Servis",
+          "Veri Yedekleme Çözümü"
+        ]
+      },
+      {
+        "id": "platinum",
+        "name": "Platinum Paket",
+        "price": 3999,
+        "features": [
+          "VIP Teknik Destek",
+          "Sınırsız Bakım",
+          "Yerinde Servis",
+          "Siber Güvenlik Paketi",
+          "Sınırsız Bulut Depolama"
+        ]
+      }
+    ]
+  },
+  "quotes": [
+    {
+      "id": "QR-TEST-123",
+      "customer": "Test Müşteri",
+      "email": "test@example.com",
+      "phone": "5551234567",
+      "company": "Test A.Ş.",
+      "service": "Akıllı Bina Otomasyonu",
+      "date": "29.03.2026",
+      "status": "Yeni",
+      "budget": "₺50,000",
+      "details": {
+        "usageType": "home",
+        "locationType": "Daire",
+        "selectedServices": ["automation"],
+        "reasons": { "automation": "Konfor" },
+        "projectScope": { "automation": { "odaSayisi": "3", "kontrolTipi": "Mobil" } },
+        "budget": 50000,
+        "name": "Test Müşteri",
+        "email": "test@example.com",
+        "phone": "5551234567",
+        "kvkkConsent": true
+      }
+    }
+  ],
+  "purchasableServices": [],
+  "purchasedServices": [],
+  "refundRequests": [],
+  "supportTickets": [
+    {
+      "id": "TKT-1774793867962",
+      "customerId": "1",
+      "customerName": "Süper Admin",
+      "customerEmail": "106077az@gmail.com",
+      "subject": "asd",
+      "status": "open",
+      "createdAt": "2026-03-29T14:17:47.962Z",
+      "updatedAt": "2026-03-29T14:17:47.962Z"
+    }
+  ],
+  "supportMessages": [
+    {
+      "id": "MSG-1774793867962",
+      "ticketId": "TKT-1774793867962",
+      "senderId": "1",
+      "senderName": "Süper Admin",
+      "senderRole": "user",
+      "text": "asd",
+      "createdAt": "2026-03-29T14:17:47.962Z"
+    }
+  ]
+}
